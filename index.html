@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trivia Game</title>
+        <meta name="description" content="trivia game">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/javascript/app.js" async defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                
+                <h1>Trivia Game</h1>
+
+                <!--Start Button-->
+
+                <button id='startBtn'>Start</button> <br>
+
+                <!--Questions that will pop up-->
+
+<!-- container that holds the questions that will be hidden at first -->
+                <div id="questions" class="hide">
+                    <h2 id="timer">Time:</h2>
+                    <h3>1. What is your favorite color?</h3>
+<!-- question 1 -->
+                    <form>
+                        <input id="answer" type="radio" name="group1" value="wrong"> Blue
+                        <input id="answer" type="radio" name="group1" value="correct"> Red
+                        <input id="answer" type="radio" name="group1" value="wrong"> Purple <br>
+                    </form>
+<!-- question 1 -->                    
+                    <h3>2. how old are you?</h3>
+                    <form>
+                        <input id="answer" type="radio" name="group1" value="wrong"> 35
+                        <input id="answer" type="radio" name="group1" value="correct">56
+                        <input id="answer" type="radio" name="group1" value="wrong"> 27 <br>
+                    </form>
+<!-- question 1 -->
+                    <h3>3. Who is super cool?</h3>
+                    <form>
+                        <input id="answer" type="radio" name="group1" value="wrong"> Errrrron Musk
+                        <input id="answer" type="radio" name="group1" value="correct"> Luis Rivas
+                        <input id="answer" type="radio" name="group1" value="wrong"> Izzy Vellos <br>
+                    </form>
+                
+                <br>
+                
+                <input id="submit" type="submit" onclick="return checkAnswers();" value="Submit">
+
+                </div> <!--Questions div-->
+
+                <!--Score Screen, Third Screen-->
+                <h2 id="score" class="hide">Game Over! <br> You got 0/3 correct!</h2>
+
+            </div> <!--Content div-->
+        </div> <!--Container div-->
+    </body>
+</html>
